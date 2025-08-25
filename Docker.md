@@ -31,9 +31,10 @@
 - `docker inspect <container>`         // Container details  
 - `docker top <container>`             // Show running processes  
   
-# docker Compose  
+# Docker Compose  
 - `docker-compose up -d`               // Start services in background  
 - `docker-compose down`                // Stop and remove services  
 - `docker-compose ps`                  // List services  
 - `docker-compose logs -f`             // Follow service logs  
+
 
