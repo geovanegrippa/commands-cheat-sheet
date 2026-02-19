@@ -18,6 +18,8 @@
 - `kubectl get deployments`                                            // List all deployments
 - `kubectl describe deployment <name>`                                 // Show deployment details of one deployment
 - `kubectl scale deployment <name> --replicas=<number>`                // Increase or decrease deployment
+- `kubectl rollout history deployment <name>`                          // Displays the version (revision) history of a deployment.
+- `kubectl rollout history deployment <name> --revision=2`             // Detailing a specific review
 - `kubectl rollout restart deployment/<name>`                          // Restart a deployment
 - `kubectl rollout status deployment/<name>`                           // Show the status of a deployment
 - `kubectl create deployment <name> --image=<image> -o yaml`           // Create a deployment and print the YAML
@@ -60,3 +62,4 @@
 
 # Kubernetes permissions
 - `kubectl get roles`                      // List all roles
+
