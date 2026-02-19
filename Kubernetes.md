@@ -22,6 +22,8 @@
 - `kubectl rollout history deployment <name> --revision=2`             // Detailing a specific review
 - `kubectl rollout restart deployment/<name>`                          // Restart a deployment
 - `kubectl rollout status deployment/<name>`                           // Show the status of a deployment
+- `kubectl rollout undo deployment <name>`                             // Reverts the Deployment to the previous available revision.
+- `kubectl rollout undo deployment <name> --revision=2`                // Reverts the Deployment to a specific revision (e.g., revision 2).
 - `kubectl create deployment <name> --image=<image> -o yaml`           // Create a deployment and print the YAML
 - `kubectl create deployment <name> --image=<image> \` 
   `-o yaml --dry-run=client > name.yaml`                               // Create a deployment without applying it
@@ -62,4 +64,5 @@
 
 # Kubernetes permissions
 - `kubectl get roles`                      // List all roles
+
 
