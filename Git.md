@@ -129,6 +129,9 @@ git reset --hard HEAD~1
 
 # Reverte um commit específico (gera novo commit inverso)
 git revert <hash_do_commit>
+
+# Remover arquivos e diretórios que não estão sendo rastreados pelo Git (untracked). O -n (dry-run) mostra o que seria apagado sem realmente excluir.
+git clean -fdn
 ```
 
 ---
@@ -225,3 +228,4 @@ git log --oneline --graph --decorate --all
 📂 **Licença:** MIT
 
 ---
+
