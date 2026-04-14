@@ -14,6 +14,11 @@
 - `docker rmi <image>`                 // Remove image  
 - `docker history <image>`             // Show image history  
   
+# Run Containers  
+- `docker run --name nginx-test -d -p 8080:80 nginx`  // Executa o NGINX em modo destacado e mapeia porta 80 para 8080  
+- `docker run --rm busybox echo "Hello from BusyBox"`  // Executa um comando simples no BusyBox e remove o container ao finalizar  
+- `docker run -it --rm busybox sh`                   // Abre um shell interativo no BusyBox e exclui ao sair  
+  
 # Network Operations  
 - `docker network ls`                  // List all networks  
 - `docker network inspect <network>`   // Show network details  
